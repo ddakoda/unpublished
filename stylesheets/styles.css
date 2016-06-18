@@ -1,0 +1,26 @@
+.article {
+  padding: 5px;
+  border: 1px solid gray;
+  position: relative;
+}
+
+.wordcount {
+  top: 20%;
+  right: 0;
+}
+
+.date {
+  top: 20%;
+  right: 0;
+}
+
+.image {
+  height: 10%;
+  width: 10%;
+}
+li {
+  list-style: none;
+  position: absolute;
+  top: 20%;
+  right: 20%;
+}
