@@ -1,7 +1,11 @@
 <article class="article" ng-repeat="article in articles">
-  <img class="image" src="{{ article.image }}">
-  <h6 class="title">{{ article.title }}</h6>
-  <li class="date">{{ article.publish_at }}</li>
-  <li class="wordcount">{{ article.words }}</li>
-  <li class="date">{{ article.profile.first_name.last_name }}</li>
+  <div class="row">
+   <img class="col-md-1" src="{{ article.image }}"></img>
+     <div class="word-content">
+      <div class="col-md-5">{{ article.title }}</div>
+      <div class="col-md-2 author">{{ article.profile.first_name}} {{article.profile.last_name  }}</div>
+      <div class="col-md-2 black">{{ article.words }}</div>
+      <div class="col-md-2 black">  {{ article.publish_at }}</div>
+    </div>
+  </div>
 </article>
